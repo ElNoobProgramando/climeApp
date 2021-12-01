@@ -1,0 +1,29 @@
+
+
+    <!-- main -->
+    <p class="text"> ˂ / ˃  &nbsp &nbsp  &nbsp &nbsp Sistemas distribuidos</p>
+    <ul class="sci">
+        <li><a href="#" target="blank"><ion-icon name="logo-github"></ion-icon></a></li>
+    </ul>
+
+
+    <!-- resultados -->
+    <div class="resultados">
+
+        {{#each cityes}}
+            <div class="resultado">
+            <h3>{{ name }}</h3>
+            <p>Latitud: <span>{{ lat }}</span></p>
+            <p>Longitud: <span>{{ lon }}</span></p>
+            <p>Descripcion: <span>{{ description }}</span></p>
+            <p>Temperatura: <span>{{ temp }}</span></p>
+        </div>
+        {{/each}}
+
+    </div>
+
+
+    <!-- scripts base -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/js/main.js"></script>
